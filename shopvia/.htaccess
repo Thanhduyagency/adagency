@@ -1,0 +1,44 @@
+RewriteEngine On
+
+ErrorDocument 404 /public/404.php
+
+
+
+
+RewriteRule ^Auth/Register$ public/Register.php [L]
+RewriteRule ^Auth/Login$ public/Login.php [L]
+RewriteRule ^Auth/Profile$ public/Profile.php [L]
+RewriteRule ^Auth/Logout$ public/Logout.php [L]
+RewriteRule ^Auth/ForgotPassword public/ForgotPassword.php [L]
+RewriteRule ^Auth/ChangePassword public/ChangePassword.php [L]
+RewriteRule ^Payment$ public/Payment.php [L]
+RewriteRule ^NapThe$ public/NapThe.php [L]
+RewriteRule ^Cash$ public/Cash.php [L]
+RewriteRule ^History$ public/History.php [L]
+RewriteRule ^Orders$ public/Orders.php [L]
+RewriteRule ^Order/([A-Za-z0-9-]+) public/ViewOrder.php?code=$1 [L]
+RewriteRule ^Reports$ public/Reports.php [L]
+RewriteRule ^Transfers$ public/Transfers.php [L]
+RewriteRule ^Giftcode$ public/Giftcode.php [L]
+
+RewriteRule ^Admin/Settings$ public/Admin-Settings.php [L]
+RewriteRule ^Admin/Add$ public/Admin-Add.php [L]
+RewriteRule ^Admin/Edit/([A-Za-z0-9-]+) public/Admin-Edit.php?id=$1 [L]
+RewriteRule ^Admin/Orders$ public/Admin-Orders.php [L]
+RewriteRule ^Admin/Services$ public/Admin-Services.php [L]
+RewriteRule ^Admin/ThemClone/([A-Za-z0-9-]+) public/Admin-ThemClone.php?id=$1 [L]
+RewriteRule ^Admin/XoaClone/([A-Za-z0-9-]+) public/Admin-XoaClone.php?id=$1 [L]
+RewriteRule ^Admin/XemClone/([A-Za-z0-9-]+) public/Admin-XemClone.php?id=$1 [L]
+RewriteRule ^Admin/XemClone/([A-Za-z0-9-]+)/Delete/([A-Za-z0-9-]+) public/Admin-XemClone.php?id=$1&delete=$2 [L]
+RewriteRule ^Admin/Users$ public/Admin-Users.php [L]
+RewriteRule ^Admin/User/Edit/([A-Za-z0-9-]+) public/Admin-EditUser.php?id=$1 [L]
+RewriteRule ^Admin/Orders$ public/Admin-Orders.php [L]
+RewriteRule ^Admin/Order/([A-Za-z0-9-]+) public/Admin-ViewOrder.php?code=$1 [L]
+RewriteRule ^Admin/Banks$ public/Admin-Banks.php [L]
+RewriteRule ^Admin/Payments$ public/Admin-Payments.php [L]
+RewriteRule ^Admin/Reports$ public/Admin-Reports.php [L]
+RewriteRule ^Admin/Dashboard$ public/Admin-Dashboard.php [L]
+RewriteRule ^Admin/Giftcode$ public/Admin-Giftcode.php [L]
+RewriteRule ^Admin/Transfers$ public/Admin-Transfers.php [L]
+RewriteRule ^Admin/Upload/Backup$ public/Admin-Upload-Backup.php [L]
+
