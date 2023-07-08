@@ -21,6 +21,7 @@ RewriteRule ^Reports$ public/Reports.php [L]
 RewriteRule ^Transfers$ public/Transfers.php [L]
 RewriteRule ^Giftcode$ public/Giftcode.php [L]
 
+
 RewriteRule ^Admin/Settings$ public/Admin-Settings.php [L]
 RewriteRule ^Admin/Add$ public/Admin-Add.php [L]
 RewriteRule ^Admin/Edit/([A-Za-z0-9-]+) public/Admin-Edit.php?id=$1 [L]
